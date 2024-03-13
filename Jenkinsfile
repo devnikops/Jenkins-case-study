@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                git branch: 'main', credentialsId: 'Git-Github-token', url: 'https://github.com/devnikops/Jenkins-case-study'
             }
         }
     }
