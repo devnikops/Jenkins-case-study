@@ -26,9 +26,9 @@ pipeline {
     post {
         failure {
             emailext(
-                to: 'developer1@example.com developer2@example.com',
+                to: 'devopswithnik@gmail.com',
                 subject: "Build Failed: ${currentBuild.fullDisplayName}",
-                body: "The build has failed. Please check the Jenkins console output for more details."
+                body: "This build has failed."
             )
         }
     }
