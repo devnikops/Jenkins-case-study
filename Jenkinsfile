@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh 'mvn clean install'
                
-                // sh 'ant build'   --build using Ant
+                // sh 'ant build'               -- build using Ant
             }
         }
     }
