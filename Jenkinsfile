@@ -1,5 +1,12 @@
 pipeline {
-    agent any
+    agent { 
+        label 'QA'
+    }
+
+    tools {
+        jdk 'jdk17'
+        maven 'maven3'
+    }
 
      stages {
         stage("Cleanup Workspace") {
